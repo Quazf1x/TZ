@@ -1,0 +1,34 @@
+.table {
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.table__row,
+.table__cell,
+.table__heading {
+  border: none;
+  padding: 1rem;
+}
+
+.table__heading {
+  background-color: var(--accent);
+  color: black;
+}
+
+.table__row {
+  background-color: var(--secondary);
+}
+
+.table__row,
+.table__cell {
+  text-align: center;
+}
+
+.table__sort-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+}

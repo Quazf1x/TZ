@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Практическое задание 1</title>
+    <link rel="stylesheet" href="./reg-modal/reg-modal.css" />
+    <link rel="stylesheet" href="./accent-button/accent-button.css" />
+    <link rel="stylesheet" href="general-styles.css" />
+    <link rel="stylesheet" href="./secondary-button/secondary-button.css" />
+    <script src="script.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <button class="accent-button accent-button_main">
+        Открыть модальное окно
+      </button>
+      <div class="modal-wrapper modal-wrapper_hidden">
+        <div class="reg-modal">
+          <h2 class="reg-modal__heading">Стать партнером проекта</h2>
+          <form class="reg-modal__form">
+            <div class="reg-modal__fields-wrapper">
+              <div class="reg-modal__image-input-wrapper">
+                <label class="reg-modal__image-label" for="image-input">
+                  <button class="reg-modal__remove-image-button">
+                    <img src="./img/remove_button.svg" />
+                  </button>
+                  <p class="reg-modal__image-label-text">
+                    <span class="red-text">*</span>
+                    <strong>Логотип(jpeg,png)</strong>
+                  </p>
+                  <input
+                    class="reg-modal__image-input"
+                    name="user-image"
+                    id="image-input"
+                    type="file"
+                    accept="image/jpeg, image/png"
+                    required
+                  />
+                  <div class="reg-modal__avatar-wrapper">
+                    <img
+                      class="reg-modal__user-avatar"
+                      src="./img/avi_placeholder.png"
+                      alt="аватар"
+                    />
+
+                    <div class="reg-modal__avatar-hover-content">
+                      <img src="./img/Icon_choose_avatar.svg" />
+                      <p class="reg-modal__avatar-hover-text">Выберите файл</p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div
+                class="reg-modal__input-wrapper reg-modal__input-wrapper_fullsize">
+                <label class="reg-modal__label" for="direction-input">
+                  <span class="red-text">*</span>Направление
+                </label>
+                <select class="reg-modal__input" id="direction-input" required>
+                  <option>Экология</option>
+                  <option>IT</option>
+                  <option>Менеджмент</option>
+                </select>
+              </div>
+            </div>
+            <button class="accent-button accent-button_modal" type="submit">
+              Стать партнером проекта
+            </button>
+            <button
+              type="reset"
+              class="secondary-button secondary-button_modal">
+              Отменить
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

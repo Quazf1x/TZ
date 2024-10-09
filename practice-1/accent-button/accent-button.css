@@ -1,0 +1,25 @@
+.accent-button {
+  background-color: var(--accent);
+  border: 2px solid var(--accent);
+  border-radius: 0.5rem;
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.accent-button:hover {
+  opacity: 0.9;
+}
+
+.accent-button_main {
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.accent-button_modal {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  height: 48px;
+  width: 100%;
+}

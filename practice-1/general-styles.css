@@ -1,0 +1,36 @@
+:root {
+  --primary: #fff;
+  --accent: #e5266e;
+  --secondary: #0848c0;
+  --red: #dd2525;
+  --grey-text: #6a6e72;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+button {
+  font-family: "PT Sans", sans-serif;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100svh;
+  height: fit-content;
+  position: relative;
+}
+
+.red-text {
+  color: var(--red);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-right: 0.25rem;
+}

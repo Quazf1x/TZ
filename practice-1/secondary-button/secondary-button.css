@@ -1,0 +1,15 @@
+.secondary-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary);
+}
+
+.secondary-button:hover {
+  text-decoration: underline;
+}
+
+.secondary-button_modal {
+  font-size: 1rem;
+  margin-top: 15px;
+}
