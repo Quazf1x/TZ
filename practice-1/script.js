@@ -52,6 +52,7 @@ const createHTMLElement = (type, id, classes, textContent, attributeObj) => {
     for (const [attrName, attrValue] of Object.entries(attributeObj)) {
       element.setAttribute(attrName, attrValue);
     }
+    
   return element;
 };
 

@@ -11,6 +11,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -30,7 +31,11 @@ main {
 .red-text {
   color: var(--red);
   font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 1.8rem;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
   margin-right: 0.25rem;
+}
+
+.red-text_img-wrapper {
+  line-height: 2rem;
 }
