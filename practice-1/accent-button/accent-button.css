@@ -1,7 +1,7 @@
 .accent-button {
   background-color: var(--accent);
   border: 2px solid var(--accent);
-  border-radius: 0.5rem;
+  border-radius: 4px;
   color: var(--primary);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
